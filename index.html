@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NAMSACCO | Together Towards Financial Freedom</title>
+
+<style>
+
+:root{
+--navy:#2F355C;
+--blue:#0D3D84;
+--mint:#8ED3B1;
+--green:#60B89A;
+--pink:#E76A8A;
+--peach:#F2A099;
+--gold:#E8C23A;
+--light:#F8F8F8;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:white;
+color:#333;
+line-height:1.7;
+}
+
+nav{
+background:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 15px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:32px;
+font-weight:bold;
+color:var(--nay);
+}
+
+.logo img{
+width:50px;
+height:50px;
+object-fit:contain;
+border-radius:50%;
+margin:0;
+}
+
+.menu a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(47,53,92,.85),rgba(13,61,132,.85)),
+url("https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:24px;
+max-width:800px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+background:var(--pink);
+color:white;
+padding:15px 35px;
+border-radius:8px;
+text-decoration:none;
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+font-size:42px;
+color:var(--navy);
+margin-bottom:40px;
+}
+
+.card{
+background:var(--light);
+padding:35px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+margin-bottom:30px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+align-items:stretch;
+}
+
+.loan-card{
+background:white;
+padding:35px;
+border-radius:20px;
+border-top:8px solid var(--pink);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.loan-card h3{
+color:var(--blue);
+margin-bottom:20px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.stat{
+background:var(--navy);
+color:white;
+padding:40px;
+text-align:center;
+border-radius:20px;
+}
+
+.stat h1{
+font-size:50px;
+color:var(--gold);
+}
+
+footer{
+background:var(--navy);
+color:white;
+padding:70px 10%;
+}
+
+footer h2{
+margin-bottom:20px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:45px;
+}
+
+.menu{
+display:none;
+}
+
+}
+.card ul,
+.loan-card ul{
+padding-left:20px;
+text-align:left;
+}
+
+.card 1i,
+.loan-card 1i{
+margin-bottom:10px;
+}
+
+.card   .btn{
+display:inline-block;
+margin-top:15px;
+}
+
+img{
+width:100%;
+border-radius:20px;
+margin-bottom:20px;
+}
+.about-card{
+text-align:center;
+} 
+
+.about-card img{
+display:block;
+margin:0 auto 20px auto;
+} 
+
+.loan-card{
+      background:white;
+      padding:35px;
+      border-radius:20px;
+      border-top:8px solid var(--pink);
+     display:flex;
+     flex-direction:column;
+    height:100%;
+}
+
+.about-card p{
+max-width:800px;
+margin:0 auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<img src="hero.png" alt="NAMSACCO Logo">
+<span>NAMSACCO</span>
+</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Loans</a>
+<a href="#">Membership</a>
+<a href="#">Contact</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Together Towards Financial Freedom</h1>
+
+<p>
+Promoting financial prosperity for public servants through enhanced savings culture and affordable financial products.
+</p>
+
+<a class="btn" href="#">
+Become a Member
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Vision & Mission</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Vision</h3>
+
+<p>
+To be the financial intermediary of choice for public servants.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Mission</h3>
+
+<p>
+To promote financial prosperity for public servants through enhanced savings culture and provision of affordable financial products.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">About NAMSACCO</h2>
+
+<div class="card about-card">
+
+<img src="about.png" alt="About">
+
+<p>
+
+NAMSACCO was registered on 10 April 2018 as a Savings and Credit Co-operative under the Co-operatives Act of 1996.
+
+Membership is voluntary and open to public servants from government offices, ministries, agencies and regional councils.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Membership Benefits</h2>
+
+<div class="card">
+
+<img src="membership.png" alt="Membership Benefits">
+
+<ul>
+
+<li>Affordable loan facilities.</li>
+
+<li>Dividends on shares and savings.</li>
+
+<li>Insurance on outstanding loans.</li>
+
+<li>Financial education and training.</li>
+
+<li>Participation in general meetings.</li>
+
+<li>Opportunity to elect leaders.</li>
+
+<li>Become a shareholder in your organisation.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Loan Products</h2>
+
+<div class="grid">
+
+<div class="loan-card">
+
+<h3>Development Loans</h3>
+
+<img src="development-loan.png" alt="Development Loans">
+
+<ul>
+
+<li>Up to 3 times savings.</li>
+
+<li>15% per annum.</li>
+
+<li>Maximum repayment period of 60 months.</li>
+
+<li>Land, livestock, buildings and vehicles.</li>
+
+</ul>
+
+</div>
+
+<div class="loan-card">
+
+<h3>School Fees Loans</h3>
+
+<img src="school-fees.png" alt="School Fees Loans">
+
+<ul>
+
+<li>Schools, colleges and universities.</li>
+
+<li>12 months repayment period.</li>
+
+<li>Supporting documents required.</li>
+
+</ul>
+
+</div>
+
+<div class="loan-card">
+
+<h3>Emergency Loans</h3>
+
+<img src="emergency-loan.png" alt="Emergency Loans">
+
+<ul>
+
+<li>Medical expenses.</li>
+
+<li>Funeral expenses.</li>
+
+<li>Fire disasters.</li>
+
+<li>Approved within two working days.</li>
+
+<li>Maximum amount N$20,000.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Shares & Savings</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Shares</h3>
+
+<p>
+Minimum share capital consists of 100 shares valued at N$20 each.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Savings</h3>
+
+<p>
+Minimum monthly savings contribution is N$200. Members may save above the minimum.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Statistics</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h1>2018</h1>
+Established
+</div>
+
+<div class="stat">
+<h1>3×</h1>
+Savings Multiplier
+</div>
+
+<div class="stat">
+<h1>N$200</h1>
+Minimum Savings
+</div>
+
+<div class="stat">
+<h1>2 Days</h1>
+Emergency Loan Approval
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Loan Qualifications</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Minimum membership period of six months.</li>
+
+<li>Regular monthly contributions.</li>
+
+<li>Loans shall not exceed three times savings.</li>
+
+<li>Repayment ability supported by payslip.</li>
+
+<li>Net salary must not be below N$1,200.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Application Forms</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Loan Application Form</h3>
+
+<p>Download the official loan application form.</p>
+
+<a class="btn" href="Loan Application Form.pdf" download> 
+Download Form
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Membership Application Form</h3>
+
+<p>Download the official membership application form.</p>
+
+<a class="btn" href="Membership Application Form.pdf" download>
+Download Form
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+
+<h2 class="title">Regulation & Governance</h2>
+
+<div class="card">
+
+<p>
+
+Public Servants SACCO is regulated under the Co-operatives Act of 1996 by the Registrar of Co-operatives.
+
+The Supervisory Committee ensures compliance with regulations, policies and procedures.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Contact Us</h2>
+
+<div class="card">
+
+<h3>Head Office</h3>
+
+<p>
+
+Public Servants SACCO Ltd
+
+<br><br>
+
+6th Floor, Alexander Forbes House
+
+<br>
+
+C/O Independence Avenue & Garten Street
+
+<br>
+
+Windhoek, Namibia
+
+</p>
+
+<br>
+
+<h3>Telephone</h3>
+
+<p>
++264 81 553 0638
+</p>
+
+<p>
++264 61 287 2184
+</p>
+
+<p>
++264 61 287 2136
+</p>
+
+<br>
+
+<h3>Email</h3>
+
+<p>
+executiveassistant@namsacco.com.na
+<p>
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>NAMSACCO</h2>
+
+<p>
+Namibia Public Service Savings & Credit Co-operative
+</p>
+
+<br>
+
+<p>
+Together Towards Financial Freedom
+</p>
+
+<br>
+
+<p>
+© 2026 NAMSACCO. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
